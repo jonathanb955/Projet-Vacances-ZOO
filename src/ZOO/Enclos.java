@@ -1,6 +1,7 @@
 package ZOO;
 
 public class Enclos {
-    private
-    private int capacités;
+    private int numeroEnclos;
+    private  boolean proprete;
+    private int capacites;
 }
