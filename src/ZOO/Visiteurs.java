@@ -10,6 +10,11 @@ public class Visiteurs {
         this.age = age;
         this.ticket = ticket;
 
+        if (ticket==false) {
+            System.out.println("Vous avez pas de ticket! Veuillez en acheter un");
+        }else{
+            System.out.println("Bienvenue, vous pouvez entrer!");
+        }
         if (age < 16) {
             System.out.println("Billet enfant");
         }else{

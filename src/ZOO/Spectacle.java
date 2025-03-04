@@ -1,7 +1,10 @@
 package ZOO;
 
 
-public class Spectacle  extends Animal{
+public class Spectacle  {
+    private Animal animal;
+    private Soigneur soigneur;
+
 
 
 }
