@@ -21,17 +21,32 @@ public class Enclos {
     public void propreteEnclos () {
         proprete = 100;
     }
+public void degradationChaqueJours (int degradation){
+        degradation(10);
+}
 
-    public void degradation(int degradation) {
-        if (degradation == 100) {
+    private void degradation(int i) {
+        if (proprete == 100){
+            System.out.println("L'enclos est propre et n'a pas besoin d'être nettoyé");
+        return;
+        }
+        proprete -= i;
+        if (proprete <= 0){
+
+        }
+    }
+
+    public void infoDegradation() {
+        if (proprete == 100) {
             System.out.println("L'enclos est tout propre et n'a pas besoin d'être nettoyé.");
-            return;
+        }else if (proprete >= 70) {
+            System.out.println("L'enclos  commence à être sale");
+        }else if (proprete >= 50) {
+            System.out.println("L'enclos est sale et doit être lavé");
+        }else if (proprete >= 40) {
+            System.out.println("L'enclos est très sale et doit absolument être lavé");
         }
-        proprete -= degradation;
-        if (proprete == 50) {
-            proprete = 0;
-        }
-        System.out.println("Point de dégradation : " + proprete+", l'enclos doit être nettoyé");
+
     }
 
     public void nettoyage(int proprete) {
